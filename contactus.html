@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - CivPrepMaster</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+</head>
+<body>
+    <div class="navbar">
+        <a href="Home"><i class="fas fa-home"></i> Home</a>
+        <a href="resources"><i class="fas fa-book"></i> Resources</a>
+        <a href="license-preparation"><i class="fas fa-certificate"></i> License Prep</a>
+        <a href="psc-preparation"><i class="fas fa-graduation-cap"></i> PSC Prep</a>
+        <a href="aboutus"><i class="fas fa-info-circle"></i> About Us</a>
+        <a href="contactus"><i class="fas fa-envelope"></i> Contact Us</a>
+    </div>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form id="contact-form" action="https://script.google.com/macros/s/AKfycbxrs6bbqt-5TP17f4F7hMtWUJLEH6lUwVvcyTJZ05-DAsgq_nMfi1rNDv_cTUmkmoopuw/exec" method="POST" onsubmit="return showThankYouMessage();">
+            <div class="form-group">
+                <label for="first-name"><i class="fas fa-user"></i> First Name<span style="color:red;">*</span>:</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+            </div>
+            <div class="form-group">
+                <label for="middle-name"><i class="fas fa-user"></i> Middle Name:</label>
+                <input type="text" id="middle-name" name="middle-name" placeholder="Enter your middle name">
+            </div>
+            <div class="form-group">
+                <label for="last-name"><i class="fas fa-user"></i> Last Name<span style="color:red;">*</span>:</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+            </div>
+            <div class="form-group">
+                <label for="father-name"><i class="fas fa-user"></i> Father's Name<span style="color:red;">*</span>:</label>
+                <input type="text" id="father-name" name="father-name" placeholder="Enter your father's name" required>
+            </div>
+            <div class="form-group">
+                <label for="mother-name"><i class="fas fa-user"></i> Mother's Name<span style="color:red;">*</span>:</label>
+                <input type="text" id="mother-name" name="mother-name" placeholder="Enter your mother's name" required>
+            </div>
+            <div class="form-group">
+                <label for="mobile"><i class="fas fa-phone"></i> Mobile Number<span style="color:red;">*</span>:</label>
+                <div class="phone-number">
+                    <div class="country-code">
+                        <select id="country-code" name="country-code">
+                            <option value="+977">+977</option>
+                        </select>
+                    </div>
+                    <input type="tel" id="mobile" name="mobile" placeholder="XXXXXXXXXX" pattern="[0-9]{10}" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email"><i class="fas fa-envelope"></i> Email ID<span style="color:red;">*</span>:</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$">
+            </div>
+            <div class="form-group">
+                <label for="address"><i class="fas fa-map-marker-alt"></i> Address<span style="color:red;">*</span>:</label>
+                <input type="text" id="address" name="address" placeholder="Enter your address" required>
+            </div>
+            <div class="form-group">
+                <label for="university"><i class="fas fa-university"></i> University<span style="color:red;">*</span>:</label>
+                <select id="university" name="university" required>
+                    <option value="" disabled selected>Select your university</option>
+                    <option value="Tribhuvan University">Tribhuvan University</option>
+                    <option value="Pokhara University">Pokhara University</option>
+                    <option value="Mid-West University">Mid-West University</option>
+                    <option value="Purbanchal University">Purbanchal University</option>
+                    <option value="Kathmandu University">Kathmandu University</option>
+                    <option value="Nepal Engineering College">Nepal Engineering College</option>
+                    <option value="Kathmandu Engineering College">Kathmandu Engineering College</option>
+                    <option value="Kantipur Engineering College">Kantipur Engineering College</option>
+                    <option value="Himalaya College of Engineering">Himalaya College of Engineering</option>
+                    <option value="National College of Engineering">National College of Engineering</option>
+                    <option value="Advanced College of Engineering and Management">Advanced College of Engineering and Management</option>
+                    <option value="Pulchowk Campus, Institute of Engineering">Pulchowk Campus, Institute of Engineering</option>
+                    <option value="Khwopa College of Engineering">Khwopa College of Engineering</option>
+                    <option value="Madan Bhandari Memorial College of Engineering">Madan Bhandari Memorial College of Engineering</option>
+                    <option value="Nepal College of Information Technology">Nepal College of Information Technology</option>
+                    <option value="Thapathali Campus, Institute of Engineering">Thapathali Campus, Institute of Engineering</option>
+                    <option value="Nepal College of Computer Science">Nepal College of Computer Science</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="district"><i class="fas fa-map"></i> District<span style="color:red;">*</span>:</label>
+                <select id="district" name="district" required>
+                    <option value="" disabled selected>Select your district</option>
+                    <option value="Baglung">Baglung</option>
+                    <option value="Baitadi">Baitadi</option>
+                    <option value="Bardiya">Bardiya</option>
+                    <option value="Bhairahawa">Bhairahawa</option>
+                    <option value="Bhaktapur">Bhaktapur</option>
+                    <option value="Chitwan">Chitwan</option>
+                    <option value="Dhanusa">Dhanusa</option>
+                    <option value="Dhulikhel">Dhulikhel</option>
+                    <option value="Doti">Doti</option>
+                    <option value="Gorkha">Gorkha</option>
+                    <option value="Gulmi">Gulmi</option>
+                    <option value="Hamro Janga">Hamro Janga</option>
+                    <option value="Hanuman Nagar">Hanuman Nagar</option>
+                    <option value="Illam">Illam</option>
+                    <option value="Jajarkot">Jajarkot</option>
+                    <option value="Janjanpur">Janjanpur</option>
+                    <option value="Kailali">Kailali</option>
+                    <option value="Kanchanpur">Kanchanpur</option>
+                    <option value="Kapilvastu">Kapilvastu</option>
+                    <option value="Kaski">Kaski</option>
+                    <option value="Kathmandu">Kathmandu</option>
+                    <option value="Kavrepalanchok">Kavrepalanchok</option>
+                    <option value="Lalitpur">Lalitpur</option>
+                    <option value="Lamjung">Lamjung</option>
+                    <option value="Mahakali (Darchula)">Mahakali (Darchula)</option>
+                    <option value="Makwanpur">Makwanpur</option>
+                    <option value="Manang">Manang</option>
+                    <option value="Nawalpur">Nawalpur</option>
+                    <option value="Nuwakot">Nuwakot</option>
+                    <option value="Okhaldhunga">Okhaldhunga</option>
+                    <option value="Palpa">Palpa</option>
+                    <option value="Panchthar">Panchthar</option>
+                    <option value="Parbat">Parbat</option>
+                    <option value="Patan">Patan</option>
+                    <option value="Pokhara">Pokhara</option>
+                    <option value="Ramechhap">Ramechhap</option>
+                    <option value="Rasuwa">Rasuwa</option>
+                    <option value="Salyan">Salyan</option>
+                    <option value="Sindhuli">Sindhuli</option>
+                    <option value="Sindhupalchok">Sindhupalchok</option>
+                    <option value="Surkhet">Surkhet</option>
+                    <option value="Syangja">Syangja</option>
+                    <option value="Tanahun">Tanahun</option>
+                    <option value="Taplejung">Taplejung</option>
+                    <option value="Udayapur">Udayapur</option>
+                    <option value="Terhathum">Terhathum</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message"><i class="fas fa-comment"></i> Message<span style="color:red;">*</span>:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+        
+        <div class="thank-you-message" id="thank-you-message">
+            <h2>Thank You for Your Time!</h2>
+            <p>Your message has been delivered to ER. Arun Panthi. He will contact you as soon as possible.</p>
+            <a href="Home" class="cta-button">Go to Home</a>
+        </div>
+    </div>
+
+    <div class="social-media">
+        <h2><i class="fab fa-connectdevelop"></i> Connect with Us</h2>
+        <p>Follow us on social media to stay updated with the latest resources and news.</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=61566247450701" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.tiktok.com/@er.arunpanthi" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/@Arunpanthisblog" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="mailto:erarunpanthi@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2024 CivPrepMaster. All rights reserved. | 
+        <a href="PrivacyPolicy" style="color:white;">Privacy Policy</a> | 
+        <a href="TermsofService" style="color:white;">Terms of Service</a></p>
+    </footer>
+
+    <script>
+        function showThankYouMessage() {
+            event.preventDefault();
+            document.getElementById("contact-form").style.display = "none";
+            document.getElementById("thank-you-message").style.display = "block";
+            document.getElementById("contact-form").submit();
+            return false;
+        }
+    </script>
+</body>
+</html>
